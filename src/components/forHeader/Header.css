@@ -1,0 +1,76 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 43px;
+    padding-bottom: 36px;
+    padding-left: 195px;
+    padding-right: 195px;
+    background-color: rgba(122, 7, 229, 0.5);
+}
+
+.logo {
+    margin-top: 9px;
+    height: 45.13px;
+}
+
+
+.searchBar {
+    width: 490px;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchIcon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+
+.inputForSearchBar {
+    outline: none;
+    border: none;
+    width: 91%;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    width: 750px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.elemntOfNavigation {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 84px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgForNav {
+    width: 32px;
+    height: 32px;
+}
+
+.textOfNav {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
