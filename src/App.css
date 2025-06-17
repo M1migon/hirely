@@ -38,3 +38,9 @@
     transform: rotate(360deg);
   }
 }
+
+.forSliderAndSignUp {
+  margin-top: 70px;
+  margin-left:195px ;
+  display: flex;
+}

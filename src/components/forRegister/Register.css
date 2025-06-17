@@ -121,6 +121,7 @@
 }
 
 .contWith {
+    text-decoration: none;
     margin-top: 32px;
     margin-bottom: -16px;
     height: 62px;
@@ -129,6 +130,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .contWithText {
@@ -138,7 +140,7 @@
 }
 
 .imgForCont {
-    margin-left: 30%;
+    margin-left: 26%;
     margin-right: 3%;
 }
 
