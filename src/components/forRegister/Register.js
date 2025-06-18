@@ -49,6 +49,13 @@ export function GoTo(props) {
     )
 }
 
+export function NavButton(props) {
+    return (
+        <Link to={props.path} className="signUp">
+            <p>{props.text}</p>
+        </Link>
+    )
+}
 
 export function Register() {
     return (
@@ -59,7 +66,7 @@ export function Register() {
                 <InputString image='EnvelopeSimple' type='email' placeholder='Email or phone number'></InputString>
                 <InputString image='LockKey' type='password' placeholder='Password'></InputString>
                 <InputString image='LockKey' type='password' placeholder='Confirm password'></InputString>
-                <button className="signUp" type="submit">Sign Up</button>
+                <NavButton path='/in' text = "Sign Up"></NavButton>
                 <p className="description">By Signing Up, you agree to our <p className='colored'> Terms of Service</p> and <p className='colored'> Privacy Policy</p></p>
                 <img src="or.png"></img>
                 <ContWith image='google' text='Continue with Google'></ContWith>

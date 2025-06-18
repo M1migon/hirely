@@ -26,12 +26,12 @@ export function Header(props) {
             <img className="logo" src="HIRELY.png" alt="logo"></img>
             <SearchBar></SearchBar>
             <nav>
-                <ElementOfNav img='home.png' text='Home'></ElementOfNav>
-                <ElementOfNav img='users.png' text='Network'></ElementOfNav>
-                <ElementOfNav img='Suitcase.png' text='Vacancies'></ElementOfNav>
-                <ElementOfNav img='ChatCircleDots.png' text='Messages'></ElementOfNav>
-                <ElementOfNav img='BellRinging.png' text='Notifications'></ElementOfNav>
-                <ElementOfNav img='User.png' text='My Profile'></ElementOfNav>
+                <ElementOfNav img='home.png' text='Home'  path = {props.HomePath}></ElementOfNav>
+                <ElementOfNav img='users.png' text='Network' path = {props.NetworkPath}></ElementOfNav>
+                <ElementOfNav img='Suitcase.png' text='Vacancies' path = {props.VacanciesPath}></ElementOfNav>
+                <ElementOfNav img='ChatCircleDots.png' text='Messages' path = {props.MessagesPath}></ElementOfNav>
+                <ElementOfNav img='BellRinging.png' text='Notifications' path = {props.NotificationsPath}></ElementOfNav>
+                <ElementOfNav img='User.png' text='My Profile' path = {props.ProfilePath}></ElementOfNav>
             </nav>
         </header>
     )

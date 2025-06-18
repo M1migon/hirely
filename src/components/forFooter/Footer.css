@@ -1,0 +1,180 @@
+.footer {
+  width: 100%;
+  height: 350px;
+  background-color: #7109D180;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 130px;
+  height: 80%;
+  width: 80%;
+}
+
+.footerContainer p{
+  cursor: pointer;
+}
+.footerContainer img{
+  cursor: pointer;
+}
+
+#footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 28px;
+}
+
+#foolerLogo {
+  width: 150px;
+  height: 30px;
+}
+
+#footerText {
+  width: 260px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rowContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+}
+
+#rowContainer p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerIcon {
+  width: 24px;
+  height: 24px;
+}
+
+#thinRow {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  cursor: default;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boldRow {
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+#row {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#verticalRowContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+#verticalRowContainer div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#emailInput {
+  width: 230px;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding-left: 12px;
+}
+#emailInput::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding-left: 2px;
+}
+
+#send { 
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#sendIcon { 
+  width: 30px;
+  height: 30px;
+}
+
+#lastThinRow {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 155px;
+  color: #FFFFFF;
+  cursor: default;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

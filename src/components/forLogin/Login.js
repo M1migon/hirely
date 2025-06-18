@@ -48,6 +48,13 @@ export function GoTo(props) {
         </Link>
     )
 }
+export function NavButton(props) {
+    return (
+        <Link to={props.path} className="signUp">
+            <p>{props.text}</p>
+        </Link>
+    )
+}
 
 
 export function Login() {
@@ -58,7 +65,7 @@ export function Login() {
                 <h2 className="startWithUs">your professional future</h2>
                 <InputString image='EnvelopeSimple' type='email' placeholder='Email or phone number'></InputString>
                 <InputString image='LockKey' type='password' placeholder='Password'></InputString>
-                <button className="signUp" type="submit">Login</button>
+                <NavButton path='/in' text = "Sign In"></NavButton>
                 <p className="description">By Signing Up, you agree to our <p className='colored'> Terms of Service</p> and <p className='colored'> Privacy Policy</p></p>
                 <img src="or.png"></img>
                 <ContWith image='google' text='Continue with Google'></ContWith>
