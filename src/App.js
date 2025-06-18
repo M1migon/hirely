@@ -8,6 +8,7 @@ import { Login } from './components/forLogin/Login';
 import { EmptyLayout } from './components/forLayout/EmptyLayout';
 import { MainPageOut } from './components/forLayout/MainPage';
 import { MainPageIn } from './components/forLayout/MainPage';
+import { MainContent } from './components/forOultets/MainContent';
 
 function App() {
   return (
@@ -22,11 +23,11 @@ function App() {
         </Route>
 
         <Route element={<MainPageOut/>}>
-            <Route path='/'></Route>
+            <Route path='/' element={<MainContent></MainContent>}></Route>
         </Route>
 
         <Route element={<MainPageIn/>}>
-            <Route path='/in'></Route>
+            <Route path='/in' element={<MainContent></MainContent>}></Route>
         </Route>
 
 
