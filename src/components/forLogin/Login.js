@@ -34,10 +34,10 @@ function InputString(props) {
 
 function ContWith(props) {
     return (
-        <div className="contWith">
+        <Link to={props.path} className="contWith">
             <img className="imgForCont" src={props.image + '.png'}></img>
             <p className="contWithText">{props.text}</p>
-        </div>
+        </Link>
     )
 }
 
