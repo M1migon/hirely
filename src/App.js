@@ -8,12 +8,14 @@ import { Post } from './components/forPost/Post';
 import { Slider } from './components/forSlider/Slider';
 import { MainPage } from './components/main';
 import { SignUpOrLogin } from './components/forSignUpOrLogin/signUpOrLogin';
+import { Profile } from './components/forProfile/Profile';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainPage></MainPage>}></Route>
+        <Route path='/1' element={<Profile imageOfProfile='menBig.jpg'></Profile>}></Route>
         <Route path='/header' element={<Header></Header>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
