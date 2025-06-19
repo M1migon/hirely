@@ -13,9 +13,9 @@ export function SignUpOrLogin(props) {
         <div className="wrap">
             <p className="getToWork">Get to work with</p>
             <img className="miniLogo" src="HIRELY.png" alt="logo"></img>
-            <ButtonToSomeWhere title='Login' isMargin='addSomeMargin'></ButtonToSomeWhere>
+            <ButtonToSomeWhere title='Login' isMargin='addSomeMargin' to = 'login'></ButtonToSomeWhere>
             <img className="or" src="or2.png"></img>
-             <ButtonToSomeWhere title='Sign Up'></ButtonToSomeWhere>
+             <ButtonToSomeWhere title='Sign Up' to = 'register'></ButtonToSomeWhere>
         </div>
     )
 }
