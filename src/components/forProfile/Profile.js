@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import './Profile.css'
+import {Modal} from "../forModal/Modal";
+
+
+
+
 
 function ElementOfPersonalInfo(props) {
     return (
@@ -13,21 +18,25 @@ function ElementOfPersonalInfo(props) {
 
 function PersonalInfo(props) {
     return (
-        <div className="infoOfUser">
-            <div className="PersonalInfo">
-                <ElementOfPersonalInfo class='thatInfo' topicOfInfo='User Name:' info='14Z&V88'></ElementOfPersonalInfo>
-                <ElementOfPersonalInfo class='thatInfo' topicOfInfo='Name and Surname:' info='Jonathan Mitchel'></ElementOfPersonalInfo>
-                <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Age:' info='01.01.1901'></ElementOfPersonalInfo>
-                <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Position:' info='Senior UI/UX Designer'></ElementOfPersonalInfo>
-            </div>
-            <div className="PersonalInfo">
-                <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Phone Number:' info='+380 68 710 72 79'></ElementOfPersonalInfo>
-                <ElementOfPersonalInfo class='withoutColor' topicOfInfo='E-mail:' info='johnmitch@gmail.com'></ElementOfPersonalInfo>
-                <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Country, City, Region:' info='Ukraine, Odessa, Odesska Oblast'></ElementOfPersonalInfo>
-                <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Adress:' info='Sadovaya 3'></ElementOfPersonalInfo>
-            </div>
-            <div className="PersonalInfo">
-                <ElementOfPersonalInfo class='thatInfo' topicOfInfo='Portfolio:' info='https://surl.li/uqckzf'></ElementOfPersonalInfo>
+        <div className="infoOfUserCard">
+            <div id = 'infoOfUserCardContainer'>
+                <div className="PersonalInfo">
+                    <ElementOfPersonalInfo class='thatInfo' topicOfInfo='User Name:' info='Jo A. H.'></ElementOfPersonalInfo>
+                    <ElementOfPersonalInfo class='thatInfo' topicOfInfo='Name and Surname:' info='Jonathan Mitchel'></ElementOfPersonalInfo>
+                    <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Age:' info='01.01.1901'></ElementOfPersonalInfo>
+                    <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Position:' info='Senior UI/UX Designer'></ElementOfPersonalInfo>
+                </div>
+                <div className="PersonalInfo">
+                    <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Phone Number:' info='+380 68 710 72 79'></ElementOfPersonalInfo>
+                    <ElementOfPersonalInfo class='withoutColor' topicOfInfo='E-mail:' info='johnmitch@gmail.com'></ElementOfPersonalInfo>
+                    <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Country, City, Region:' info='Ukraine, Odessa, Odesska Oblast'></ElementOfPersonalInfo>
+                    <ElementOfPersonalInfo class='withoutColor' topicOfInfo='Adress:' info='Sadovaya 3'></ElementOfPersonalInfo>
+                </div>
+                <div className="PersonalInfo">
+                    <ElementOfPersonalInfo class='LinkInfo' topicOfInfo='Portfolio:' info='https://surl.lihttps://
+                    youtu.be/dQw4w9Wg
+                    XcQ?si=6r2VXtXfAAcvwS-B/uqckzf'></ElementOfPersonalInfo>
+                </div>
             </div>
         </div>
     )
@@ -52,6 +61,7 @@ function Propositions(props) {
 }
 
 export function Profile(props) {
+    const [isNoteOpen, setNoteOpen] = useState(false);
     return (
         <div className="wrapForProfile">
             <div className="profileInfo">
@@ -62,7 +72,10 @@ export function Profile(props) {
                         <img className="imageOfProfile" src={props.imageOfProfile}></img>
                         <img className="camera" src="camera.png"></img>
                     </div>
-                    <img className="noteImg" src="note.png"></img>
+                    <img className="noteImg" src="note.png"
+                        onClick={() => setNoteOpen(true)}
+                        style={{ cursor: "pointer" }}
+                    ></img>
                 </div>
                 <div className="globalInfo">
                     <PersonalInfo></PersonalInfo>
@@ -87,10 +100,16 @@ export function Profile(props) {
                 <div className="payment">
                     <h1 className="paymentDeatils">Payment Details</h1>
                     <p className="cardNum">Card Number:</p>
-                    <input type="text" className="cardNumberInput" placeholder="1444 **** **** **** 8888"></input>
+                    <input type="text" className="cardNumberInput" placeholder="8888 **** **** **** 8888"></input>
                     <img className="howToPay" src="partners.png"></img>
                 </div>
             </div>
+            <Modal
+            isOpen={isNoteOpen}
+            onClose={() => setNoteOpen(false)}
+            imageSrc="note.png"
+            />
+
         </div>
     )
 }

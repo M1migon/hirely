@@ -26,7 +26,7 @@ export function MainPageIn() {
             VacanciesPath = 'login'
             MessagesPath = 'login'
             NotificationsPath = 'login'
-            ProfilePath = 'login'
+            ProfilePath = 'profile'
         />
         <Outlet/>
         <Footer/>

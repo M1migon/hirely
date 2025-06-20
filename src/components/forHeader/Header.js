@@ -25,7 +25,10 @@ export function Header(props) {
     return(
         <div id ='header'>
             <div id =  "headerContainer">
-                <img className="logo" src="HIRELY.png" alt="logo"></img>
+                <Link to='/' className="logoContainer">
+                    <img className="logo" src="HIRELY.png" alt="logo"></img>
+                </Link>
+
                 <SearchBar></SearchBar>
                 <nav>
                     <ElementOfNav img='home.png' text='Home'  path = {props.HomePath}></ElementOfNav>

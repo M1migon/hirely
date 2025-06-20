@@ -1,0 +1,148 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+#modalContainer {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 850px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#InputTitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #7A07E5;
+    padding-left: 8px;
+}
+
+#longInput {
+    width: 820px;
+}
+
+.inputForModal {
+    width: 820px;
+    height: 40px;
+    border: 2px solid #7A07E5;
+    border-radius: 10px;
+}
+
+.inputForModal2 {
+    width: 400px;
+    height: 40px;
+    border: 2px solid #7A07E5;
+    border-radius: 10px;
+    outline: none;
+}
+
+.inputForModal option {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #00000080;
+}
+
+#modalHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    align-items: center;
+    height: 90px;
+    width: 830px;
+}
+
+#modalTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: black;
+}
+
+#modalBody {
+    width: 830px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#togetherRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 830px;
+    gap: 10px;
+
+}
+
+.saveButton {
+  width: 160px;
+  height: 40px;
+  background-color: #7A07E5;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  cursor: pointer;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 820px;
+    height: 200px;
+}
